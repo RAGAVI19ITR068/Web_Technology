@@ -1,0 +1,26 @@
+body{
+    min-height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(253, 216, 199);
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+}
+table{
+    margin: 2rem 25rem;
+    text-align: center;
+    border-collapse: collapse;
+    border: black solid 3px;
+}
+thead,tbody,th,td{
+    border: black solid 1px;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+th{
+    background-color: rgb(219, 161, 186);
+}
+td{
+    background-color: rgb(252, 223, 234);
+}

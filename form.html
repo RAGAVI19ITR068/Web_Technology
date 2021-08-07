@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="form_style.css">
+</head>
+
+<body>
+    <h3 style="text-align: center;">REGISTRATION FORM</h3>
+    <form action="">
+        <div class="form-group">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-z]{3 to 20}" title="Name should be alphabets and less than 20 characters">
+        </div>
+        <div class="form-group side1">
+            <div>
+                <label for="dob">Date-of-Birth</label>
+                <label for="gender">Gender</label><br>
+            </div>
+            <div>
+                <input type="date" name="dob" id="dob" placeholder="DOB">
+                <select type="text" name="gender" id="gender" placeholder="Gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="transgender">Transgender</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label><br>
+            <input type="text" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="form-group side2">
+            <div>
+                <label for="mobile">Mobile</label>
+                <label for="state">State</label>
+                <label for="pin">Pincode</label><br>
+            </div>
+            <div>
+                <input type="tel" name="mobile" id="mobile" placeholder="Mobile" pattern="[0-9]{10}" title="Mobile should be 10 digits">
+                <input type="text" name="state" id="state" placeholder="State">
+                <input type="text" name="pincoode" id="pin" placeholder="Pincode" pattern="[0-9]{6}" title="Pincode should be 6 digits">
+            </div>
+        </div>
+        <div class="check">
+            <legend>Events</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="" id="ppt">
+                <label class="form-check-label" for="ppt">Paper Presentation</label><br>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="" id="idea">
+                <label class="form-check-label" for="idea">Idea Presentation</label><br>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="" id="project">
+                <label class="form-check-label" for="project">Project Presentation</label><br>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="" id="code">
+                <label class="form-check-label" for="code">Coding & Debugging</label><br>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="" id="non-tech">
+                <label class="form-check-label" for="non-tech">Non-Technical</label>
+            </div>
+        </div>
+        <legend>Accommodation Required?</legend>
+        <div class="form-check acc">
+            <input type="radio" name="" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="" id="no">
+            <label for="no">No</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg text-center">Submit</button>
+    </form>
+</body>
+
+</html>
