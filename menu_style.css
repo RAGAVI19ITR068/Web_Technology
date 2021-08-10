@@ -5,12 +5,11 @@ body{
 .blurb h2{
     color: #ea1c2c;
     font-weight: 100;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 .blurb p{
-    color: #f498b8;
     font-weight: 100;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     line-height: 2;
 }
 .content{
@@ -28,6 +27,12 @@ body{
 }
 #mainNavbar .navbar-brand{
     color: #ea1c2c;
+}
+.dropdown-menu{
+    background: rgba(255, 86, 156, 0.39);
+    border-radius: 10px;
+    opacity: 1;
+    z-index: -5;
 }
 #headingGroup span{
     color: #ea1c2c;
