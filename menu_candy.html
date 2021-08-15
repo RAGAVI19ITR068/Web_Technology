@@ -11,126 +11,179 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="menu_style.css">
+    <style>
+        nav {
+            width: 100%;
+            height: max-content;
+            position: fixed !important;
+            border-radius: 0 0 20px 20px !important;
+            padding-top: 10px;
+        }
 
+        #candy-list a {
+            display: block;
+            color: #000000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: lighter;
+            line-height: 2.5rem;
+        }
+
+        #candy-list a:hover {
+            color: #ea1c2c !important;
+            transform: scale(1.05);
+            font-size: 22px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-        <a href="#candy" class="navbar-brand nav-link dropdown-toggle" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CANDY</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Lollipop</a>
-            <a class="dropdown-item" href="#">Jelly Beans</a>
-            <a class="dropdown-item" href="#">Caramel</a>
-            <a class="dropdown-item" href="#">Taffy</a>
-            <a class="dropdown-item" href="#">Candy Bar</a>
-            <a class="dropdown-item" href="#">Cotton Candy</a>
-            <a class="dropdown-item" href="#">Gummy Bear</a>
-            <a class="dropdown-item" href="#">Candy Corn</a>
-            <a class="dropdown-item" href="#">Bubble Gum</a>
-            <a class="dropdown-item" href="#">Hard Candy</a>
+    <nav id="mainNavbar" style="width:100%;position: fixed;">
+        <button class="navbar-brand" onclick="candyToggle()">CANDY</button>
+        <div style="width:15rem;display: none;padding: 10px 40px 10px !important;margin: 10px !important;"
+            id="candy-list">
+            <a href="#">Lollipop</a>
+            <a href="#">Jelly Beans</a>
+            <a href="#">Caramel</a>
+            <a href="#">Taffy</a>
+            <a href="#">Candy Bar</a>
+            <a href="#">Cotton Candy</a>
+            <a href="#">Gummy Bear</a>
+            <a href="#">Candy Corn</a>
+            <a href="#">Bubble Gum</a>
+            <a href="#">Hard Candy</a>
         </div>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navLinks">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">TICKETS</a>
-                </li>
-            </ul>
-        </div>
+        <ul>
+            <li>
+                <a href="#home" class="nav-link">HOME</a>
+            </li>
+            <li>
+                <a href="#about" class="nav-link">ABOUT</a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </li>
+            <li>
+                <a href="candy_form.html" class="nav-link">TICKETS</a>
+            </li>
+        </ul>
     </nav>
 
-    <section class="container-fluid px-0" id="home">
-        <div class="row align-items-center">
-            <div class="col-6">
-                <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
-                    <h1 class="">MUSEUM<span>/</span>of<span>/</span>CANDY</h1>
-                    <h1 class="">MUSEUM<span>/</span>of<span>/</span>CANDY</h1>
-                    <h1 class="">MUSEUM<span>/</span>of<span>/</span>CANDY</h1>
-                    <h1 class="">MUSEUM<span>/</span>of<span>/</span>CANDY</h1>
-                    <h1 class="">MUSEUM<span>/</span>of<span>/</span>CANDY</h1>
-                    <h1 class="">MUSEUM<span>/</span>of<span>/</span>CANDY</h1>
-                    <h1 class="">MUSEUM<span>/</span>of<span>/</span>CANDY</h1>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="imgs/hand2.png" alt="">
-            </div>
+    <section id="home">
+        <img src="imgs/hand2.png" alt="Donut on hand" style="float: right;margin-right: 1.5rem;">
+        <div id="headingGroup">
+            <h1 style="color: white;font-weight: 600;display: inline;">MUSEUM<span>/</span>of<span>/</span>CANDY</h1>
+            <img src="imgs/lolli_icon.png" alt="">
+            <h4 style="font-weight: 600;margin-bottom: 20PX;">VISIT OUR FANTASTICAL FACTORY OF FUN</h4>
+            <p>Welcome to candy museum... Candy Museum opened its doors in Manila with eight rooms tailored for
+                different desserts - Cotton candy, gummy bear, marshmallow, bubble gum, donuts, candy cane, ice cream,
+                cake pops - where you can jump, play, swing through and slide.<br>
+                Perhaps the only museum tour that begins with visitors entering through a donut hole and down a pink
+                slide, naturally every part of the Instagrammable space screams sugar overload. There are ‘Naughty’ and
+                ‘Nice’ doors leading to different Candy Cane Groves, cotton candy trees from which you can actually pick
+                and eat the treats, a marshmallow door, licorice rainbow, gummy trampolines, and a boutique to buy
+                confetti cakes and other sweet treats.<br>
+                Take the Cotton Candy Forest as an example. According to Reyes, you enter the forest through a canopy of
+                cotton candy trees, where you’ll see cut jar lights laid across the field. Those lights will guide you
+                through the tree tunnel to a field of ultra-huggable cotton candy clouds. And there, Instagrammers can
+                freely pose inside the cotton candy bowl or hug the clouds that reaches up to the ceiling. As a final
+                touch, the fairy-dusted cotton candies on the trees (That's cotton candy sprinkled with skimmed milk
+                powder) can literally be picked for munching immediately.
+            </p>
         </div>
     </section>
 
-    <section class="container-fluid px-0">
-        <div class="row align-items-center content">
-            <div class="col-md-6 order-2 order-md-1">
-                <img src="imgs/milk.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-6 text-center order-1 order-md-2">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-                        <h2>MUSEUM OF CANDY</h2>
-                        <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nobis cumque
-                            numquam. Voluptas
-                            maiores ut, suscipit nihil sint hic pariatur aliquid velit in maxime incidunt modi eum,
-                            earum ipsum tempora.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <section>
+        <img src="imgs/milk.png" alt="" style="float: left;">
+        <div>
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="imgs/lolli_icon.png" alt="">
+            <p>
+                Doughnuts are usually deep fried from a flour dough, but other types of batters can also be used.
+                Various toppings and flavorings are used for different types, such as sugar, chocolate, or maple
+                glazing. Doughnuts may also include water, leavening, eggs, milk, sugar, oil, shortening, and natural or
+                artificial flavors. <br><br>
+                The two most common types are the ring doughnut and the filled doughnut, which is injected with fruit
+                preserves, cream, custard, or other sweet fillings. Alternatively, small pieces of dough are sometimes
+                cooked as doughnut holes. Once fried, doughnuts may be glazed with a sugar icing, spread with icing or
+                chocolate on top, or topped with powdered sugar, cinnamon, sprinkles or fruit. Other shapes include
+                rings, balls, flattened spheres, twists, and other forms. Doughnut varieties are also divided
+                into cake (including the old-fashioned) and yeast-risen type doughnuts. Doughnuts are often
+                accompanied by coffee, but can also be paired with milk. They are sold at doughnut shops, convenience
+                stores, petrol/gas stations, cafes or fast food restaurants.
+            </p>
         </div>
     </section>
 
-    <section class="container-fluid px-0">
-        <div class="row align-items-center content">
-            <div class="col-md-6 text-center order-2 order-md-2">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-                        <h2>MUSEUM OF CANDY</h2>
-                        <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nobis cumque
-                            numquam. Voluptas
-                            maiores ut, suscipit nihil sint hic pariatur aliquid velit in maxime incidunt modi eum,
-                            earum ipsum tempora.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 order-2 order-md-2">
-                <img src="imgs/gumball.png" alt="" class="img-fluid">
-            </div>
+    <section>
+        <img src="imgs/gumball.png" alt="" style="float: right;margin-right: 1.5rem;">
+        <div>
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="imgs/lolli_icon.png" alt="">
+            <p>
+                An automated machine which is intended to provide the users with a diverse range of products: cotton
+                candy, gumball, hard candy etc. A candy machine dispenses a product to the
+                users based on the amount of money inserted and selection of the product. <br><br>
+                Generally, a gumball machine consists of a clear sphere (originally glass, now most often plastic) which
+                is filled with gumballs, sitting on top of a metal base. It has a metal top on top of it with a keyhole
+                in top of it so that the top can be removed and gumballs can be put in. <br><br>
+                Most gumball machines have a simple mechanism for dispensing the gumball, to the point of the actual
+                dispensation being largely invisible (after turning the handle the gumball is deposited behind the
+                door).
+            </p>
         </div>
     </section>
 
-    <section class="container-fluid px-0" id="about">
-        <div class="row align-items-center content">
-            <div class="col-md-6 order-2 order-md-1">
-                <img src="imgs/sprinkles.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-6 text-center order-1 order-md-2">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-                        <h2>MUSEUM OF CANDY</h2>
-                        <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nobis cumque
-                            numquam. Voluptas
-                            maiores ut, suscipit nihil sint hic pariatur aliquid velit in maxime incidunt modi eum,
-                            earum ipsum tempora.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <section id="about">
+        <img src="imgs/sprinkles.png" alt="" style="float: left;margin-top: 35px;">
+        <div>
+            <h2>ABOUT US</h2>
+            <img src="imgs/lolli_icon.png" alt="">
+            <p>
+                Explore our sprawling sanctuary of confectionery bliss and be transported to an imaginative wonderland
+                with a one-of-a-kind full sensory experience. This interactive art installation celebrates the vibrant
+                colors and flavors of your favorite sugarcoated delights across over a dozen environments, from flying
+                unicorn pigs to a marshmallow tsunami.
+            </p>
+            <span
+                style="font-size: 20px;letter-spacing: 10px;">&#127852;&#127846;&#127853;&#127851;&#127849;</span><br><br><br>
+            <h4 style="font-weight: 510;margin-bottom: 20PX;">OUR COMMITMENT TO YOUR SAFETY</h4>
+            <p>
+                Here at Candy Museum, the safety of our visitors and employees is our number one priority. Based on
+                guidance from health authorities and government agencies, we will be implementing new health and safety
+                measures for your visit to provide you with the safest experince possible.
+            </p>
         </div>
+    </section>
+    <section id="contact">
+        <img src="https://assets3.thrillist.com/v1/image/2826973/1584x1004/scale;jpeg_quality=60;progressive.jpg" alt=""
+            style="float: right;margin: 4rem 1.5rem 0 0;height: 40rem;">
+        <div>
+            <h3 style="font-size: 30px;font-weight: 550;text-align: center;margin-top: 20px;">CONTACT US</h3>
+            <p style="margin-top: 20px;">museum-of-candy.com <br> 0421-2345642 <br> +91-7245136781</p>
+
+        </div>
+        <form action="">
+            <legend style="text-align: center;">Any questions</legend>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Email"><br><br>
+            <label for="question">Your Question</label><br>
+            <textarea type="text" name="question" id="question" placeholder="Question"></textarea><br><br>
+            <button type="submit">Get Help</button>
+        </form>
+        <span id="follow">
+            Follow Us <br>
+            <span style="letter-spacing: 20px;">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+            </span>
+        </span>
     </section>
 
 
@@ -151,6 +204,17 @@
                 $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
             });
         });
+
+        function candyToggle() {
+            var candyList = document.getElementById("candy-list");
+            var brand = document.getElementsByClassName("navbar-brand");
+            if (candyList.style.display === "none") {
+                candyList.style.display = "block";
+                candyList.style.position = "absolute";
+            } else {
+                candyList.style.display = "none";
+            }
+        }
     </script>
 
 </body>
