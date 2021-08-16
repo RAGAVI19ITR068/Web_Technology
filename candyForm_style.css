@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(255, 216, 190);
+}
 form{
     background: url("https://i.pinimg.com/originals/d0/fd/4c/d0fd4c29b0bc0330d73eb0cf6991fed0.jpg");
     /* background: no-repeat; */
