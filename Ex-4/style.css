@@ -1,0 +1,102 @@
+.navbar-brand img{
+    width: 26% !important;
+}
+.nav-link{
+    color: white !important;
+}
+section{
+    min-height: 100vh !important;
+    max-height: max-content !important;
+}
+.nav-item{
+    margin: 0 8px;
+    width: max-content;
+}
+.nav-link:hover{
+    color: rgb(255, 230, 0) !important;
+}
+#home{
+    min-height: 90vh !important;
+    max-height: 90vh !important;
+    margin-top: 1.3rem !important;
+    position: absolute;
+}
+.carousel-item {
+    max-height: 68vh;
+}
+.row .col i{
+    font-size: 40px;
+    margin-left: 8.6rem;
+}
+.row .col p{
+    margin-left: 0.5rem;
+    text-align: center;
+}
+hr{
+    display: inline-block !important;
+    margin: 0.3rem 4rem;
+    background-color: rgb(255, 196, 2);
+    border: 2px solid rgb(255, 196, 2);
+    width: 350px;
+}
+#contact .globe{
+    padding: 6rem 0 2rem;
+    border-bottom: 2px dashed grey;
+}
+#contact .sec img{
+    width: 28%;
+    margin: 1.85rem 8rem;
+}
+.sec a{
+    color: rgb(185, 185, 185);
+    display: block;
+    text-decoration: none;
+    line-height: 2.65rem;
+}
+.follow i{
+    font-size: 25px;
+    line-height: 2.65rem;
+}
+@media (max-width : 1500px) {
+    #brand-left{
+        display: inline-block !important;
+    }
+    #brand-enter{
+        display: none;
+    }
+    .bi-person{
+        display: none;
+    }
+    #login{
+        display: inline-block !important;
+    }
+    .row .col i{
+        margin-left: 6rem;
+    }
+    #premium{
+        margin-left: 21rem;
+    }
+    hr{
+        display: block;
+        margin: 1% 31%;
+    }
+    h4{
+        display: block;
+        margin: 0 25% !important;
+    }
+    .sec img{
+        width: 5rem !important;
+        height: 5rem !important;
+        margin: 1rem 2rem !important;
+    }
+    .bi-rock img{
+        width: 30% !important;
+        margin: 2rem 8rem !important;
+    }
+    .bi-rock h3{
+        padding-top: 2rem !important;
+    }
+    #log-span{
+        display: block !important;
+    }
+}

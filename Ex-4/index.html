@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Whirlpool India | Home Appliances</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./image/WhirlpoolFavicon.jpg">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="brand-left" href="#about-whirl" style="display: none;">
+                <img src="./image/logo-white.png" alt="Whirlpool">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mr-5 mx-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./fridge.html" target="_blank">Refrigeration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./laundry.html" target="_blank">Laundry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./kitchen.html" target="_blank">Kitchen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ac.html" target="_blank">Air Conditioners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./purify.html" target="_blank">Purification</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand mx-5" id="brand-enter" href="#about-whirl">
+                    <img src="./image/logo-white.png" alt="Whirlpool">
+                </a>
+                <a class="nav-link" href="#contact">Support</a>
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </form>
+                <a class="nav-link" href="#login-modal" data-bs-toggle="modal" data-bs-target="#login-modal">
+                    <i class="bi bi-person" style="font-size: 25px;"></i>
+                    <span id="log-span" style="display: none;">Login</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+
+        <div class="modal fade show" id="login-modal" role="dialog" tabindex="-1" aria-labelledby="login-modalLabel"
+            aria-describedby="login-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="login-modalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-3 row">
+                                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="email" readonly class="form-control-plaintext"
+                                        id="email" placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="password" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="password" class="form-control" id="password"
+                                        rows="3" placeholder="Password">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark text-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                            data-bs-target="#register-modal">Register</button>
+                        <button type="submit" class="btn btn-warning text-light" data-bs-toggle="modal"
+                            data-bs-target="#login-modal">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade show" id="register-modal" role="dialog" tabindex="-1" aria-labelledby="login-modalLabel"
+            aria-describedby="login-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="login-modalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-3 row">
+                                <div class="col">
+                                    <label for="first" class="col-sm-4 col-form-label">First name</label>
+                                    <input type="text" id="first" class="form-control" placeholder="First name"
+                                        aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <label for="last" class="col-sm-4 col-form-label">Last name</label>
+                                    <input type="text" id="last" class="form-control" placeholder="Last name"
+                                        aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="email" readonly class="form-control-plaintext"
+                                        id="email" placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="password" class="col-sm-3 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="password" class="form-control" id="password"
+                                        rows="3" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="password" class="col-sm-3 col-form-label">Re-enter</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="password" class="form-control" id="password"
+                                        rows="3" placeholder="re-enter">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark text-light" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-warning text-light" data-bs-toggle="modal"
+                            data-bs-target="#register-modal">Register</button>
+                        <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                            data-bs-target="#login-modal">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/All-appliances.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/Dark-AI.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/Fridge.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/double-door-ref.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/double_door__desk2.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/Washing-machine.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/Ecom_Range_Bloomwash.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/Microwave-ovens.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/ac_desk_1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/air_purifier_desk_new.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/Water-Purifier.gif" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col">
+                    <i class="bi bi-truck"></i>
+                    <p>Free Delivery in 48 hrs <br> <span class="text-muted">and Express Installation<sup>*</sup></span>
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="bi bi-percent"></i>
+                    <p>'No Questions Asked' Resturns <br> <span class="text-muted">Within 7 days<sup>*</sup></span></p>
+                </div>
+                <div class="col">
+                    <i class="bi bi-cash-stack"></i>
+                    <p>No Cost EMI <br> <span class="text-muted">Up to 24 months<sup>*</sup></span></p>
+                </div>
+                <div class="col">
+                    <i class="bi bi-person-check-fill" id="premium"></i>
+                    <p>Premium Care <br> <span class="text-muted">Same day service visit<sup>*</sup></span></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h4 style="display: inline-block; margin: 0 1.8rem; text-align: center;">Exclusive benefits only on
+            whirlpoolindia.com</h4>
+        <hr>
+    </section>
+    <section></section>
+    <section id="about-whirl">
+        <div class="row m-0 mb-3">
+            <div class="col-lg-6 col-md-5" style="margin-top: 5rem !important;">
+                <img class="img-fluid bg-warning float-end" src="./image/100-year-lable.png" alt="100 years"
+                    style="width: 20%;">
+            </div>
+            <div class="col-lg-6 col-md-5">
+                <h1 class="mb-5" style="margin-top: 5rem !important;">
+                    WHIRLPOOL <br>
+                    <span style="font-weight: 300 !important;">OF INDIA LTD.</span>
+                </h1>
+            </div>
+        </div>
+        <p class="text-justify" style="padding-left: 2rem;">
+            <img class="img-fluid" src="./image/company-whirlpool.jpg" alt="company"
+                style="float: right;width: 13rem;height: 25rem; margin: 2rem 4rem 0;">
+            Whirlpool entered India in the late 1980s as part of its global expansion strategy. It forayed into the
+            market under a joint venture with TVS group and established the first Whirlpool manufacturing facility in
+            Pondicherry for washing machine category. <br><br>
+
+            In 1995 Whirlpool acquired Kelvinator India Limited and marked an entry into the refrigerator market as
+            well. The same year the company also saw acquisition of major shares in TVS joint venture and later in 1996,
+            Kelvinator and TVS acquisitions were merged to create, Whirlpool of India Limited. This expanded the
+            company's portfolio in the Indian subcontinent to washing machines, refrigerator, microwave ovens and air
+            conditioners. <br><br>
+
+            Whirlpool of India Limited headquartered in Gurugram, is now one of the leading manufacturers and marketers
+            of major home appliances in the country. The company owns three state-of-the-art manufacturing
+            facilities at Faridabad, Pondicherry and Pune. Each of the manufacturing set-up features an infrastructure
+            that is
+            witness of Whirlpool's commitment to providing its consumer with forward looking solutions. <br><br>
+
+            The Whirlpool Brand in India is the symbolic representative of the spirit that drives and inspires us to be
+            consistent with what we do best, making Home Appliances with advanced and intuitive technology to give our
+            customers better than expected results every time. This enormous success comes from an enduring brand vision
+            that drives us to create a strong bond with all
+            our consumers. This bond has been created and strengthened over the years by providing forward looking
+            solutions that have partnered with our consumers in managing their home life well. <br><br>
+
+            At the very core of our bond with our consumers, stands our brand vision, Creating Happier Homes
+            We constantly strive to make moments in our consumers' everyday home life more enjoyable through our
+            products, so that these moments lead to a lifetime of joyful experiences.
+        </p>
+        <div class="row bg-warning m-0 mt-3 bi-rock">
+            <div class="col-lg-6 col-md-5" style="border-right: 2px solid white;">
+                <img src="./image/icon-bionocular.png" alt="bionocular" style="width: 20%;margin: 4rem;">
+                <div class="container-fluid d-inline-block" style="width: max-content;">
+                    <h3 class="d-inline-block" style="padding-top: 4rem !important;">OUR
+                        <span class="text-light" style="font-size: 4rem;font-weight: 700;">
+                            VISION
+                        </span><br>
+                        <p class="text-justify d-inline" style="font-size: 20px;font-weight: 300;">
+                            Best branded consumer products... <br> in every home around the world
+                        </p>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-5 px-5 bi-rock">
+                <div class="container-fluid d-inline-block" style="width: max-content;">
+                    <h3 class="d-inline-block" style="padding-top: 4rem !important;">OUR
+                        <span class="text-light" style="font-size: 4rem;font-weight: 700;">
+                            MISSION
+                        </span><br>
+                        <p class="text-justify d-inline" style="font-size: 20px;font-weight: 300;">
+                            Create demand and earn trust everyday
+                        </p>
+                    </h3>
+                </div>
+                <img src="./image/icon-rocket.png" alt="rocket" style="width: 13%;margin: 4rem;">
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-dark" style="padding: 0 5rem;">
+        <div class="row globe">
+            <div class="col-6">
+                <h1 class="float-end text-light" style="font-size: 90px;">
+                    <i class="bi bi-globe2"></i>
+                </h1>
+            </div>
+            <div class="col">
+                <h1 class="text-warning my-2">
+                    DISCOVER<br>
+                    <span style="font-weight: 300 !important;color: white;">
+                        WHIRLPOOL
+                    </span>
+                </h1>
+            </div>
+        </div>
+        <div class="row text-light sec">
+            <div class="col-lg-3 col-md-12 d-lg-block text-center hours">
+                <div class="row-lg-auto row-md-auto col-lg-0 col-md-12">
+                    <img class="img-fluid" src="./image/two_hour.png" alt="2 hours"><br>
+                    <p>Assured call back within 2 hour<sup>*#</sup></p>
+                </div>
+                <div class="row-lg-auto row-md-auto col-lg-0 col-md-12">
+                    <img class="img-fluid" src="./image/twenty_four_hour.png" alt="24 hours"><br>
+                </div>
+                <p>Service engineer visits in 24 hours<sup>@#</sup></p>
+                <div class="row-lg-auto row-md-auto col-lg-0 col-md-12">
+                    <img class="img-fluid" src="./image/cities_tours.png" alt="city hours"><br>
+                </div>
+                <p>Vast service networks across India</p>
+            </div>
+            <div class="col m-4">
+                <h5 class="mb-3">Whirlpool Products</h5>
+                <a href="">Refrigerators</a>
+                <a href="">Laundry</a>
+                <a href="">Air Conditioners</a>
+                <a href="">Kitchen</a>
+            </div>
+            <div class="col m-4 disc">
+                <h5 class="mb-3">Discover Whirlpool</h5>
+                <a href="">The Company</a>
+                <a href="">The Brand</a>
+                <a href="">Export</a>
+                <a href="">Media Room</a>
+                <a href="">Careers</a>
+                <a href="">Investors</a>
+                <a href="">Sustainability</a>
+                <a href="">Awards & Recognition</a>
+            </div>
+            <div class="col m-4">
+                <h5 class="mb-3">Service & supports</h5>
+                <a href="">Customer Suppot</a>
+                <a href="">Annual Maintenance Contact</a>
+                <a href="">FAQs</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="col-lg-2 col-md-12 m-4 follow">
+                <h3 class="mb-3">Follow Us</h3>
+                <div class="d-md-flex d-lg-block">
+                    <p><i class="bi bi-facebook text-warning me-3"></i>WhirlpoolIndiaOfficial</p>
+                    <p><i class="bi bi-twitter text-warning me-3"></i>whirlpool_india</p>
+                    <p><i class="bi bi-instagram text-warning me-3"></i>whirlpool_india</p>
+                    <p><i class="bi bi-youtube text-warning me-3"></i>WhirlpoolinIndia</p>
+                    <p><i class="bi bi-telephone-fill text-warning me-3"></i>Call 1800 208 1800</p>
+                    <p><i class="bi bi-envelope-fill text-warning me-3"></i>'WPL' to 58558</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,22 +1,48 @@
+*{
+    font-weight: 600;
+    font-size: 22px;
+}
 body{
     min-height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: rgb(253, 216, 199);
+    background-image: url("web-back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 120vh;
+}
+#header{
+    min-width: 100%;
+    height: max-content;
+    background-color: white;
+    position: fixed;
 }
 p{
     font-size: 20px;
-    margin: 20px;
+    margin:  0px 10px 0;
+    display: inline-block;
+}
+h3{
+    text-align: center;
+    display: inline-block;
+    margin: 0rem 22rem;
 }
 table{
-    margin: 2rem 25rem;
+    margin: 13rem 10rem !important;
     text-align: center;
     border-collapse: collapse;
     border: black solid 3px;
+    min-width: 50rem;
+    position: absolute;
 }
 thead,tbody,th,td{
     border: black solid 1px;
     padding: 20px 30px;
     font-size: 20px;
+    font-weight: 500;
 }
 th{
     background-color: rgb(219, 161, 186);
